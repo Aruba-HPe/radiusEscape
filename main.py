@@ -4,7 +4,7 @@
 # @Author  : Jinlin
 # @File    : main.py
 # @Project : radiusEscape
-import requests
+
 
 from mm import aos8_api_caller as aos8
 from radius_status import radius_status
