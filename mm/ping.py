@@ -53,8 +53,7 @@ class Ping:
         # print(command)
         if command:
             command = " ".join(command)
-            p = subprocess.Popen(command, stdout=subprocess.PIPE,
-                                 stderr=subprocess.PIPE)
+            p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
             out, err = p.communicate()
             # print(out.decode())
             out = out.decode().split('\n')

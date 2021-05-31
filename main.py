@@ -32,6 +32,8 @@ if __name__ == '__main__':
             aos8_session.post('configuration/object/virtual_ap', enable_dot1x_disable_psk, '/mm/mynode')
             aos8_session.write_memory('/mm/mynode')
             dot1x_vap_status = True
+        else:
+            pass
 
 
 
